@@ -1,0 +1,15 @@
+.tulisan_one{
+    color: red;
+    font-family: sans-serif;
+    font-style: normal;
+}
+.tulisan_two{
+    color: green;
+    font-size: 24pt;
+    font-style: italic;
+}
+.tulisan_three{
+    color: blue;
+    font-weight: bold;
+    font-style: oblique;
+}
