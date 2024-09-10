@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>switch case branching</title>
+    </head>
+    <body>
+        <script>
+            var answer = prompt ("Kamu beruntung! please choose your prize by entering numbers 1 to 5.")
+            var gift = "";
+            switch (answer) {
+                case "1":
+                    gift = "tissue";
+                    break;
+                
+                case "2":
+                    gift = "coffee box";
+                    break;
+
+                case "3":
+                    gift = "sticker";
+                    break;
+
+                case "4":
+                    gift = "Oil";
+                    break;
+
+                case "5":
+                    gift = "Money Rp 50.000";
+                    break;
+
+                default:
+                    document.write("<p>Opps! u choose wrong</p>")
+                    break;
+            }
+            if (gift === "") {
+                document.write("<p>u failed to get a prize</p>")
+            } else {
+                document.write("<h2>Congrats, u get " + gift +"</h2>")
+            }
+        </script>
+    </body>
+</html>
