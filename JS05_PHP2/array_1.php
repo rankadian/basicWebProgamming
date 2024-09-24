@@ -6,9 +6,9 @@
 <h2>Indexed Array</h2>
 <?php
 $LecturerList=["Elok Nur Hamdana", "Unggul Pamenang", "Bagas Nugraha"] ;
-echo $LecturerList [2]."<br>";
-echo $LecturerList [0]."<br>";
-echo $LecturerList [1]."<br>";
+foreach($LecturerList as $Lecturer){
+echo $Lecturer."<br>";
+}
 ?>
 </body>
 </html>
