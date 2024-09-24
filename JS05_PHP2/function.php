@@ -1,8 +1,12 @@
 <?php
-function introduce(){
-echo "Assalamualaikum,<br>";
-echo "introduce my name is elok <br>";
+function introduce($name, $salam){
+echo $salam. ",<br>";
+echo "introduce my name is ".$name."<br>";
 echo "Nice to meet you <br>";
 }
-introduce();
+introduce("Hamdana", "Hello");
+echo "<hr>";
+$me = "Elok";
+$greeting = "good morning";
+introduce($me, $greeting);
 ?>
