@@ -1,10 +1,9 @@
 <?php
-function helloWorldDisplay() {
-    echo "Hello world! <br>";
-
-    for ($i = 1; $i <= 25; $i++) { 
-        echo "Iteration to {$i}<br>";
-    }
+function showNumbers (int $amount, int $index = 1) {
+echo "iteration to {$index}<br>" ;
+if ($index < $amount) {
+showNumbers($amount, $index + 1) ;
 }
-helloWorldDisplay();
+}
+showNumbers(20);
 ?>
