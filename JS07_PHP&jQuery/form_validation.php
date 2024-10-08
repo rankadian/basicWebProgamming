@@ -2,45 +2,19 @@
 <html>
     <head>
         <title>Input Form with Validation</title>
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     </head>
     <body>
         <h1>Input Form with Validation</h1>
-        <form id="myForm" method="post" action="form_validation.php">
+        <form method="post" action="form_validation.php">
         <label for="name">Name : </label>
         <input type="text" id="name" name="name">
-        <span id="name-error" style="color: red;"></span><br>
+        <br>
 
         <label for="email">Email : </label>
         <input type="text" id="email" name="email">
-        <span id="email-error" style="color: red;"></span><br>
+        <br>
         <input type="submit" value="submit">
         </form>
-
-        <script>_
-            $(document).ready(function(){
-                $('#myForm').submit(function(event) {
-                    var name = $("#name").val();
-                    var email = $("#email").val();
-                    var valid = true;
-
-                    if (name === "") {
-                        $("#name-error").text("name must be filled");
-                    } else {
-                        $("#name-error").text("");
-                    }
-
-                    if (email === "") {
-                        $("#email-error").text("email must be filled");
-                    } else {
-                        $("#email-error").text("");
-                    }
-                    if (valid) {
-                        (!event.preventDefault());
-                    }
-                });
-            });
-        </script>
     </body>
 </html>
 <?php
