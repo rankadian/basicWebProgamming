@@ -5,5 +5,10 @@ if (empty($myArray)) {
 } else {
     echo "defined array";
 }
+if (empty($nonExistentVar)) {
+    echo "undefined or empty variable";
+} else {
+    echo "defined variable";
+}
 
 ?>
