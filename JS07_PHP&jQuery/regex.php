@@ -1,8 +1,8 @@
 <?php
-$pattern = '/[a-z]/';
-$text = 'This is a sample text';
-if (preg_match($pattern, $text)) {
-    echo "lowercase letter found!";
+$pattern = '/[0-9]+/';
+$text = 'There are 123 apples';
+if (preg_match($pattern, $text, $matches)) {
+    echo "Match : ";
 } else {
-   echo "no lowercase letters";
+   echo "nothing matches";
 }
