@@ -1,13 +1,14 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Multiupload Document</title>
+        <title>Multiupload Photos</title>
     </head>
 <body>
-    <h2>Upload Document</h2>
+    <h2>Upload Photos</h2>
     <form action="upload_process.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="files[]" multiple="multiple" accept=".pdf, .doc, .docx">
-        <input type="submit" value="submit">
+        <input type="file" name="photos[]" multiple="multiple" accept=".jpg, .jpeg, .png, .gif">
+        <input type="submit" name="submit" value="submit">
     </form>
 </body>
 </html>
